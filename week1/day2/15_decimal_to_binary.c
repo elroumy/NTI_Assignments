@@ -9,8 +9,8 @@ int main() {
 
     printf("Binary: ");
 
-    for (int i = bits - 1; i >= 0; i--) {
-        printf("%u", (number >> i) & 1);
+    for (int itteration = bits - 1; itteration >= 0; itteration --) {
+        printf("%u", (number >> itteration) & 1);
     }
 
     printf("\n");

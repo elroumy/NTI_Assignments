@@ -8,9 +8,9 @@ int main() {
     printf("Enter a number: ");
     scanf("%u", &number);
 
-    for (int i = 0; i < bits; i++) {
-        if ((number >> i) & 1) {
-            position = i;
+    for (int itteration = 0; itteration < bits; itteration++) {
+        if ((number >> itteration) & 1) {
+            position = itteration;
             break;
         }
     }

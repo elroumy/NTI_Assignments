@@ -8,8 +8,8 @@ int main() {
     printf("Enter a number: ");
     scanf("%u", &number);
 
-    for (int i = bits - 1; i >= 0; i--) {
-        if ((number >> i) & 1)
+    for (int itteration = bits - 1; itteration >= 0; itteration--) {
+        if ((number >> itteration) & 1)
             break;
 
         count++;
